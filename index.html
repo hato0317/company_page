@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheet.css" media="screen and (max-width: 480px)">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <title>Company</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $(function() {
+      $(window).scroll(function() {
+        if($(window).scrollTop() > 565) {
+          $("#headmast").addClass("scrollhead");
+        } else {
+           $("#headmast").removeClass("scrollhead");
+         }
+      });
+    });<!--ヘッダースクロール-->
+
+    $(function() {
+      $(".nail").click(function() {
+        var dataUrl = $(this).attr("dataUrl");
+        $(".change").attr("src", dataUrl);
+      });
+    });
+    $(function(){
+      $(".first-type").click(function(){
+        $(".image-change").attr("src","https://cdn.pixabay.com/photo/2019/08/11/07/11/old-tape-4398267_960_720.png");
+        $(".feuture-text").text("テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキスト。");
+        $(".feuture-text").css("font-size","13px");
+        $(".feuture-text").css("margin-top","0");
+      });
+      $(".second-type").click(function(){
+        $(".image-change").attr("src","https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_960_720.png");
+        $(".feuture-text").text("テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。");
+        $(".feuture-text").css("font-size","13px");
+      });
+      $(".third-type").click(function(){
+        $(".image-change").attr("src","https://cdn.pixabay.com/photo/2017/10/31/23/33/desk-2906792_960_720.png");
+        $(".feuture-text").text("テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。");
+      });
+      $(".four-type").click(function(){
+        $(".image-change").attr("src","https://cdn.pixabay.com/photo/2017/11/24/08/48/office-2974407_960_720.png");
+        $(".feuture-text").text("テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。");
+      });
+    });
+
+    $(function() {
+    $('.slider1')
+        .css({opacity: 0})
+        .each(function(i){
+            $(this).delay(500 * i).animate({opacity:1}, 1500);
+        });
+});
+$(function(){
+  $(".slider1").click(function(){
+    $(".slider1").fadeOut(500);
+    $(".slider2").fadeIn(3000);
+  });
+});
+$(function(){
+  $(".slider2").click(function(){
+    $(".slider2").fadeOut(500);
+    $(".slider3").fadeIn(3000);
+  });
+});
+$(function(){
+  $(".slider3").click(function(){
+    $(".slider3").fadeOut(0);
+    $(".slider1").fadeIn(3000);
+  });
+});
+
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+$(function() {
+$(window).scroll(function() {
+var scTop = $(this).scrollTop();
+if(scTop > 500){
+  $(".top-button-edit").fadeIn(1000);
+}else{
+  $(".top-button-edit").css("display","none");
+  }
+});
+});
+  </script>
+  <header id="6">
+    <div class="header-image">
+      <img class="slide-image slider1" src="https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_960_720.jpg">
+      <img class="slide slider2" src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_960_720.jpg">
+      <img class="slide slider3" src="https://cdn.pixabay.com/photo/2016/01/14/20/14/desk-1140699_960_720.jpg">
+      <div class="header-title">
+        <p class="first-title"></p>
+        <!--
+  --> <p class="second-title"></p>
+      </div>
+      <!--header-title-->
+    </div>
+    <!--header-image-->
+    <div class="header-catch">
+      <p></p>
+    </div>
+    <!--header-catch-->
+
+    <div id="headmast">
+      <img src="">
+      <div class="header-border">
+      </div>
+      <!--header-border-->
+      <div class="header-menu feature">
+        <a href="#1">特徴</a>
+      </div>
+      <!--header-menu feature-->
+      <div class="header-border">
+        <!--縦線-->
+      </div>
+      <!--header-border-->
+      <div class="header-menu concept">
+        <a href="#2">コンセプト</a>
+      </div>
+      <!--header-menu concept-->
+      <div class="header-border">
+        <!--縦線-->
+      </div>
+      <!--header-border-->
+      <div class="header-menu voice">
+        <a href="#3">先輩たちの声</a>
+      </div>
+      <!--header-menu voice-->
+      <div class="header-border">
+      </div>
+      <!--header-border-->
+      <div class="header-menu comp">
+        <a href="#4">会社概要</a>
+      </div>
+      <!--header-menu company-->
+      <div class="header-border">
+      </div>
+      <!--header-border-->
+      <div class="header-menu inquiry">
+        <a href="#5">問い合わせ</a>
+      </div>
+      <!--header-menu inquiry-->
+      <div class="header-border">
+      </div>
+      <!--header-border-->
+    </div>
+    <header>
+      <div class="header-under-border">
+      </div>
+      <!--header-under-border-->
+      <div  id="1" class="feature-wrapper">
+        <div class="feature-title">
+
+            <!--横線-->
+            <nobr><p>- 特徴 -</p></nobr>
+
+        </div>
+        <!--feature-title-->
+        <div class="feature-box-head">
+          <button type="button" class="first-type">特徴1</button><button type="button" class="second-type">特徴2</button><button type="button" class="third-type">特徴3</button><button type="button" class="four-type">特徴4</button>
+        </div>
+        <!--feature-box-head-->
+        <div class="feature-box">
+          <div class="feuture-text"　id="text-one">
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキスト。</p>
+          </div>
+          <!--feuture-text-->
+          <div style="display:none" class="feuture-text"　id="text-two">
+            <img src="https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_960_720.png">
+          <!--feuture-text-->
+        </div>
+          <div style="display:none"class="feuture-text"　id="text-three">
+            <img src="https://cdn.pixabay.com/photo/2017/10/31/23/33/desk-2906792_960_720.png">
+          </div>
+          <!--feuture-text-->
+          <div style="display:none"class="feuture-text"　id="text-four">
+            <img src="https://cdn.pixabay.com/photo/2017/11/24/08/48/office-2974407_960_720.png">
+          </div>
+          <!--feuture-text-->
+          <div class="feauture-image">
+            <img  class="image-change"src="https://cdn.pixabay.com/photo/2019/08/11/07/11/old-tape-4398267_960_720.png">
+          </div>
+          <!--feauture-image-->
+        </div>
+        <!--feature-box-->
+      </div>
+      <!--feature-wrapper-->
+      <div id="2" class="concept-wrapper">
+        <div class=concept-title>
+          <p class="s1">コンセプト</p>
+        </div>
+        <!--concept-title-->
+        <div class="concept-image">
+          <div class="big-image">
+            <img class="change" src="https://cdn.pixabay.com/photo/2016/11/19/21/01/analysis-1841158_960_720.jpg">
+          </div>
+          <!--big-image-->
+          <div class="small-image">
+            <img class="first-image nail" dataUrl="https://cdn.pixabay.com/photo/2016/11/19/21/01/analysis-1841158_960_720.jpg" src="https://cdn.pixabay.com/photo/2016/11/19/21/01/analysis-1841158_960_720.jpg">
+            <img class="second-image nail" dataUrl="https://cdn.pixabay.com/photo/2017/07/31/10/04/entrepreneur-2557104_960_720.jpg" src="https://cdn.pixabay.com/photo/2017/07/31/10/04/entrepreneur-2557104_960_720.jpg">
+            <img class="third-image nail" dataUrl="https://cdn.pixabay.com/photo/2017/03/10/08/57/questions-2132217_960_720.jpg" src="https://cdn.pixabay.com/photo/2017/03/10/08/57/questions-2132217_960_720.jpg">
+          </div>
+          <!--small-image-->
+          <div class=concept-text>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+            <p>テキストテキストテキストテキスト。</p>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+            <p>テキストテキストテキストテキストテキストテキスト。</p>
+            <p>テキストテキストテキストテキストテキスト。</p>
+          </div>
+          <!--concept-text-->
+        </div>
+        <!--concept-image-->
+      </div>
+      <!--concept-wrapper-->
+      <div class="letter-image">
+
+      </div>
+      <!--letter-image-->
+      <div id="3" class="senpai-title">
+        <p class="s1">先輩たちの声</p>
+      </div>
+      <!--senpai-title-->
+      <div class="voice-wrapper">
+        <div class="senpai-image">
+          <img src="https://cdn.pixabay.com/photo/2015/07/17/22/44/student-849828_960_720.jpg">
+        </div>
+        <!--senpai-image-->
+        <div class="senpai-info">
+          <p>年代 : 30代</p>
+          <p>子供 : 1人</p>
+          <p>前職 ・ 社歴 : 営業事務 4年</p>
+          <p class="mobile-voice">テキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <!--senpai-info-->
+        <div class="senpai-image2">
+          <img src="https://cdn.pixabay.com/photo/2017/08/01/00/44/laptop-2562361_960_720.jpg">
+        </div>
+        <!--senpai-image2-->
+        <div class="senpai-info2">
+          <p>年代 : 30代</p>
+          <p>子供 : 0人</p>
+          <p>前職 ・ 社歴 : 経理 6年</p>
+          <p class="mobile-voice">テキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <!--senpai-info2-->
+      </div>
+      <!--senpai-wrapper-->
+      <div class="box">
+        <div class="senpai-voice1">
+          <p>テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキスト<br>
+            テキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <!--senpai-voice1-->
+        <div class="senpai-voice2">
+          <p>テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキスト<br>
+            テキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <!--senpai-voice2-->
+      </div>
+      <!--box-->
+      <div id="4"class="company-title">
+        <p class="s1">会社概要</p>
+      </div>
+      <!--company-title-->
+      <div class="company">
+        <div class="mappp">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.76493611525882!3d35.68123618019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1580866973398!5m2!1sja!2sjp" width="460" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <!--mappp-->
+        <table border="1" frame="void">
+          <tr>
+            <td>
+              商号
+            </td>
+            <td>
+              Company 株式会社
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              所在地
+            </td>
+            <td>
+              東京Office<br>〒000-0000 東京都千代田区テキストテキスト<br>千代田テキストテキスト6F<br>横浜テキストテキスト<br>〒000-0000 神奈川テキストテキスト<br>テキストビル2F
+            </td>
+          <tr>
+            <td>
+              創業
+            </td>
+            <td>
+              2000年0月
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              業務内容
+            </td>
+            <td>
+              テキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--company-->
+      <div id="5"class="contact-form">
+        <div class="contact-title">
+          <p class="s1">お問い合わせ</p>
+        </div>
+        <!--contact-title-->
+        <div class="form">
+          <ul>
+            <li class="box1"><label for="name">　<span class="mgr-100">名前</span></label><input type="text" class="box-box" name="#"></li>
+            <li class="box2"><label for="furigana">　<span class="mgr-67">フリガナ</span></label><input type="text" class="box-box" name="#">
+            </li>
+            <li class="box3"><label for="phone">　<span class="mgr-67">電話番号</span></label><input type="text" class="box-box" name="#">
+            </li>
+            <li class="box4"><label for="mail">　<span class="mgr-20">メールアドレス</span></label><input class="mail-box" type="text" name="#">
+            </li>
+            <li class="box5">　<span class="mgr-67">職務経験</span><input type="radio">あり<span class="mgr-20"></span><input class="experience-box" type="radio">なし</li>
+            <li class="box6">　<span class="mgr-67">所有資格<br class="brbr"></span><input id="only-box"type="checkbox">Web Designer　<br class="brbr"><input type="checkbox">HTML Corder　<br class="brbr"><input type="checkbox">Programer　<br class="brbr"><input type="checkbox">Video Producer　<br class="brbr"></li>
+            <li class="experience-second box6" id="just-box"><span class="mgr-147"></span><input type="checkbox">Web Designer　<br class="brbr"><input type="checkbox" name="#">HTML Corder　<br class="brbr"><input type="checkbox">Directer　<br class="brbr"><input type="checkbox">Video Producer　<br class="brbr"></li>
+            <li class="box7"><label for="appeal">　自己アピール</label>
+      <textarea type="text" name="#"></textarea>
+            </li>
+          </ul>
+        </div>
+        <!--form-->
+        <div class="form-button">
+          <button class="form-button-edit"type="submit" value="#">入力内容を確認する</button>
+        </div>
+        <!--form-button-->
+      </div>
+      <!--contact-form-->
+      <div class="top-button">
+        <a href="#6"class="top-button-edit">▲<a>
+      </div>
+      <!--top-button-->
+      <div class="copyright">
+        <p>copyright(c)company All Right Reserved</p>
+      </div>
+      <!--copywrite-->
+
+      <body>
+        <html>
