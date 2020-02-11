@@ -1,0 +1,1395 @@
+* {
+  margin:auto;
+}
+
+body {
+  font-family: '游ゴシック', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
+}
+
+header{
+  width:100%;
+  margin-left:0;
+}
+.scrollhead{
+  position:sticky;
+  top:0;
+  z-index: 1;
+  background-color:rgb(218, 252, 255, 0.3);
+  animation-duration:2s;
+  width:100%;
+}
+
+.header-image {
+  bottom: auto;
+  font-weight: bold;
+  height: 540px;
+  position: relative;
+  cursor:pointer;
+}
+.slide-image, .slider1, .slider2, .slider3{
+  height: 560px;
+  width:100%;
+}
+.slide{
+display:none;
+}
+
+.header-title {
+  padding-bottom: 30px;
+  position:absolute;
+  bottom: 0;
+}
+
+.first-title {
+  font-size: 22px;
+  margin-bottom: -20px;
+  padding-left: 100px;
+}
+
+.second-title {
+  font-size: 36px;
+  padding-left: 100px;
+}
+
+.header-catch {
+  background-color: #91fdff;
+  height: 15px;
+  padding-left: 100px;
+}
+
+.header-catch p {
+  font-size: 10px;
+  color: white;
+}
+
+#headmast {
+  height: 70px;
+  display: inline-flex;
+  width:100%;
+}
+
+#headmast img {
+  padding-left: 95px;
+  margin-right: 165px;
+  opacity:0.7;
+}
+nobr{
+  font-size:36px;
+}
+.header-border {
+  border-left: thin solid black;
+  width: 5px;
+  height: 10px;
+}
+
+.header-menu a {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.header-menu a:hover{
+  opacity:0.6;
+}
+.header-under-border {
+  border:thin solid black;
+  width: 100%;
+}
+
+.feature-wrapper {
+  height: 615px;
+  margin-bottom: 50px;
+}
+
+.s2 {
+  display: flex;
+  font-size: 36px;
+  align-items: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.s2:before, .s1:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  background: black;
+}
+
+.s2:before {
+  margin-right: 10px;
+}
+
+.s2:after {
+  margin-left: 10px;
+}
+
+.feature-box-head {
+  border: solid thin #ff9000;
+  height: 50px;
+  width: 1000px;
+  margin-left: 150px;
+}
+
+.feature-box-head {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.feature-box-head button {
+  width: 25%;
+  font-size: 24px;
+  height: 60px;
+  border-style: none;
+  margin-top: -10px;
+  color: white;
+}
+
+
+
+.first-type {
+  background-color: white;
+  color: black !important;
+}
+
+.second-type {
+  background-color: #76ff33;
+}
+
+.third-type {
+  background-color: #1eacfc;
+}
+
+.four-type {
+  background-color: #ff90e0;
+}
+.feature-box {
+  border: solid thin #ff9000;
+  height: 400px;
+  width: 1000px;
+  margin-left: 150px;
+  display: flex;
+}
+
+.feuture-text {
+  display: inline-block;
+  ;
+  margin-top:0;
+  padding-top:60px;
+  padding-left: 30px;
+  width: 46%;
+}
+.first-type:hover,.second-type:hover,.third-type:hover,.four-type:hover{
+  opacity:0.8;
+  cursor:pointer;
+}
+
+.feuture-text p {
+  padding-bottom: 25px;
+  font-size: 13px;
+}
+
+.feauture-image img {
+  width: 450px;
+  height: 275px;
+}
+
+.concept-wrapper {
+  background-color:#e0e0e0;
+  height: 470px;
+}
+
+.concept-title, .feature-title, .senpai-title, .company-title, .contact-title,nobr{
+  text-align:center;
+  padding-top:50px;
+  padding-bottom:40px;
+}
+
+.s1 {
+  display: flex;
+  font-size: 36px;
+  align-items: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.s1:before, .s1:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  background: black;
+}
+
+.s1:before {
+  margin-right: 20px;
+}
+
+.s1:after {
+  margin-left: 20px;
+}
+
+.concept-image {
+  display: inline-flex;
+}
+
+.big-image {
+  padding-left: 150px;
+}
+
+.big-image img {
+  height: 310px;
+  width: 500px;
+}
+
+.small-image {
+  padding-left: 5px;
+  margin-top: 0;
+}
+
+.small-image img {
+  height: 65px;
+  width: 110px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.concept-text {
+  padding-right: 130px;
+  margin-top: 0;
+}
+
+.concept-text p {
+  padding-bottom: 20px;
+  padding-left: 15px;
+  font-size: 13px;
+}
+.letter-image{
+  background-attachment: fixed;
+  width:100%;
+  height:400px;
+  background-size:cover;
+  animation-duration:2s;
+  background-image:url("https://cdn.pixabay.com/photo/2014/12/15/17/16/pier-569314_960_720.jpg");
+}
+.letter-image img {
+  width:100%;
+  height: 405px;
+  animation-duration:2s;
+}
+
+.voice-wrapper {
+  display: inline-flex;
+  padding-left: 150px;
+  height:190px;
+}
+
+  .senpai-image {
+  text-align:left;
+  align-self: flex-end;
+}
+
+.senpai-image img {
+  height: 190px;
+  width: 270px;
+}
+
+.senpai-image2 {
+  margin-left:70px;
+  text-align: left;
+  position: relative;
+  top:50px;
+}
+
+.senpai-image2 img {
+  height: 180px;
+  width: 270px;
+}
+
+.senpai-info {
+  margin-top: 0;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.senpai-info2 {
+  margin-top: 0;
+  justify-content: flex-start;
+  padding-left: 10px;
+  position: relative;
+  top:50px;
+}
+
+.senpai-info p {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.senpai-info2 p {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+.box{
+  display:inline-flex;
+  margin-bottom:50px;
+}
+.senpai-voice1,.senpai-voice2 {
+  width:40%;
+  height:170px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 150px;
+  background-color: #ddecf2;
+  border-radius: 10px;
+}
+.senpai-voice2{
+  position: relative;
+  top:50px;
+  left:-40px;
+  margin-left:0;
+}
+.senpai-voice1 p, .senpai-voice2 p {
+  padding-top: 20px;
+  padding-left:15px;
+  font-size:14px;
+}
+.company-title{
+  background-color:#e0e0e0;
+}
+.company{
+  height:675px;
+  background-color:#e0e0e0;
+  padding-top:50px;
+}
+
+.mappp{
+  float:right;
+  margin-right:150px;
+  margin-left:30px;
+}
+table{
+  border-collapse:collapse;
+  margin-left:150px;
+
+ }
+ td{
+   padding:25px;
+
+ }
+ .form{
+   padding-left:150px;
+   margin-right:150px;
+ }
+#name, #mail, #furigana, #phone, #mail{
+margin-left: 40px;
+}
+ul li {
+    list-style: none;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+textarea{
+margin-left:25px;
+width:460px;
+height:145px;
+vertical-align:top;
+}
+
+.form p{
+  display:inline;
+  background-color:#ff0000;
+  color:white;
+  padding:5px 7px;
+}
+.experience-second{
+  margin-left:0px;
+  margin-top:-40px;
+  display:block;
+}
+#just-box{
+  padding-top:40px;
+  display:block;
+}
+
+.box-box{
+  width:340px;
+  height:40px;
+}
+
+.mail-box{
+  width:560px;
+  height:40px;
+}
+
+.box2, .box4, .box6{
+  background-color:#e0e0e0;
+}
+.form-button{
+  padding-top:60px;
+  text-align:center;
+}
+.form-button-edit{
+  cursor:pointer;
+  background-color:#fdc543;
+  padding:25px 50px;
+  font-size:30px;
+  border-style: none;
+}
+.nail{
+  cursor : pointer;
+}
+.form-button-edit:hover{
+  opacity:0.7;
+}
+.top-button{
+ text-align:right;
+ margin-right:18px;
+ margin-bottom:18px;
+}
+.top-button-edit{
+  background-color:#009da0;
+  color:white;
+  cursor: pointer;
+  padding:5px 10px;
+  border-style: none;
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+  opacity:0.8;
+}
+.copyright{
+  background-color:#009da0;
+  color:white;
+  margin-bottom:185px;
+  margin-top:80px;
+}
+.copyright p{
+  text-align:right;
+  padding:20px 150px 20px 0px;
+  font-size:18px;
+}
+.mobile-voice{
+  display:none;
+}
+#only-box{
+margin-left:0px;
+}
+.mgr-147{
+  margin-right:147px;
+}
+.mgr-100{
+  margin-right:100px;
+}
+.mgr-67{
+  margin-right:67px;
+}
+.mgr-20{
+  margin-right:20px;
+}
+.brbr{
+  display:none;
+}
+
+@media screen and (max-width:480px) {
+    /*　スマホ　*/
+    body{
+      max-width:480px;
+    }
+    header{
+      width:100%;
+      margin-left:0;
+    }
+
+    .slide-image, .slider1, .slider2, .slider3{
+      width:100%;
+    }
+
+
+    .first-title {
+      font-size: 14px;
+      margin-bottom: -20px;
+      padding-left: 10px;
+    }
+
+    .second-title {
+      font-size: 22px;
+      padding-left: 10px;
+    }
+
+    .header-catch {
+      height: 15px;
+      padding-left: 10px;
+    }
+
+    .header-catch p {
+      font-size: 10px;
+      color: white;
+    }
+
+    #headmast {
+      display:none;
+    }
+
+    .feature-wrapper {
+      height: 615px;
+    }
+
+
+
+    .feature-box-head {
+      border: solid thin #ff9000;
+      height: 50px;
+      width:100%;
+      margin-left: 0px;
+      padding-top: 10px;
+    }
+    .feature-box-head button{
+        font-size: 16px;
+    }
+
+
+    .first-type {
+      background-color: white;
+      color: black !important;
+    }
+
+    .feature-box {
+      width:100%;
+      margin-left: 0px;
+    }
+
+  nobr{
+    font-size:22px;
+  }
+  .feuture-text{
+    padding-left:10px;
+    font-size:9px;
+  }
+
+    .feauture-image img {
+      width: 180px;
+      height: 110px;
+    }
+
+
+    .concept-title, .feature-title, .senpai-title, .company-title, .contact-title{
+      text-align:center;
+      padding-top:50px;
+      padding-bottom:40px;
+    }
+
+    .s1 {
+      display: flex;
+      font-size: 22px;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    .s1:before {
+      margin-right: 10px;
+    }
+
+    .s1:after {
+      margin-left: 10px;
+    }
+
+    .concept-image {
+      max-width:100%;
+      width:100%;
+    }
+
+    .big-image {
+      padding-left: 10px;
+      margin-top:-1px;
+    }
+
+    .big-image img {
+      height: 120px;
+      width: 170px;
+    }
+
+    .small-image {
+      padding:0px 5px;
+      margin-top:130px;
+    }
+
+    .small-image img {
+      height: 20px;
+      width: 50px;
+      display: block;
+      padding-bottom: 20px;
+    }
+
+    .concept-text {
+      padding-right:0px;
+      margin-top: 0;
+      display:block;
+    }
+
+    .concept-text p {
+      padding-bottom: 20px;
+      padding-left: 0px;
+      font-size: 9px;
+    }
+
+    .letter-image {
+      width:100%;
+      height:160px;
+    }
+
+    .voice-wrapper {
+      display:block;
+      height:630px;
+      width:100%;
+      max-width:100%;
+      padding-left:0px !important;
+    }
+
+      .senpai-image {
+        display:inline;
+    }
+
+    .senpai-image img {
+      height: 190px;
+      width: 270px;
+    }
+
+    .senpai-image2 {
+      margin-left:0px;
+      text-align: left;
+      position: relative;
+      top:50px;
+    }
+
+    .senpai-image2 img {
+      height: 180px;
+      width: 270px;
+    }
+
+    .senpai-info {
+      margin-top: 0;
+      justify-content: flex-start;
+      padding-left: 10px;
+      display:inline;
+      font-size:7px;
+    }
+
+    .senpai-info2 {
+      margin-top: 0;
+      justify-content: flex-start;
+      padding-left: 0px;
+      position: relative;
+      top:50px;
+    }
+
+    .senpai-info p {
+      padding-bottom: 1px;
+      font-size: 9px;
+    }
+
+    .senpai-info2 p {
+      padding-bottom: 1px;
+      font-size: 9px;
+    }
+    .box{
+      display:inline-flex;
+      margin-bottom:50px;
+    }
+    .senpai-voice1,.senpai-voice2 {
+      display: none;
+    }
+    .mobile-voice{
+      display:inline !important;
+      line-height:0%;
+      display:block;
+    }
+    .senpai-voice2{
+      position: relative;
+      top:50px;
+      left:-40px;
+      margin-left:0;
+    }
+    .senpai-voice1 p, .senpai-voice2 p {
+      padding-top: 20px;
+      padding-left:15px;
+      font-size:14px;
+    }
+    .company-title{
+      background-color:#e0e0e0;
+    }
+    .company{
+      height:900px;
+      background-color:#e0e0e0;
+      width:100%;
+      max-width:100%;
+      padding-top:50px;
+    }
+
+    .mappp{
+      margin-right:0px;
+      margin-left:0px;
+    }
+  iframe{
+    width:460px;
+    height:460px;
+  }
+
+    table{
+      border-collapse:collapse;
+      margin-left:0px;
+      padding-right:5px;
+
+     }
+     td{
+       padding:15px;
+       font-size:11px;
+
+     }
+     .form{
+       padding-left:0px;
+       margin-right:0px;
+       width:100%;
+       max-width:100%;
+       font-size:12px;
+     }
+    #name, #mail, #furigana, #phone, #mail{
+    margin-left: 0px;
+    }
+    ul li {
+        list-style: none;
+        padding-bottom:10px;
+        padding-top:10px;
+        width:100%;
+        max-width:100%;
+    }
+    ul{
+      padding-inline-start:0px;
+    }
+    label{
+      padding-left:14px;
+    }
+    input,textarea{
+    margin-left:5px;
+      
+    }
+
+    .form p{
+      display:inline-block;
+      background-color:#ff0000;
+      color:white;
+      padding:5px 7px;
+      text-align:right;
+    }
+
+
+    .box-box{
+      width:300px;
+      height:20px;
+      margin-left:15px;
+    }
+    .mail-box{
+      width:300px !important;
+      height:20px;
+      margin-left:14px;
+    }
+    textarea{
+      width:340px;
+      height:130px;
+      vertical-align:top;
+      margin-left:15px;
+    }
+    .hissu1,.hissu2,.hissu3,.hissu4,.hissu5,.hissu6,.hissu7{
+
+    padding:1px 1px;
+    font-size:6px;
+  }
+  .hissu1{
+  margin-left:60px;
+  margin-right:40px;
+  }
+  .hissu2{
+  margin-left:36px;
+  margin-right:40px;
+  }
+  .hissu3{
+  margin-left:36px;
+  margin-right:40px;
+  }
+  .hissu4{
+  margin-left:4px;
+  margin-right:40px;
+  }
+  .hissu5{
+  margin-left:42px;
+  margin-right:40px;
+  }
+  .hissu6{
+  margin-left:42px;
+  margin-right:40px;
+  }
+  .hissu7{
+    margin-right:15px;
+    margin-left:18px;
+  }
+
+
+
+    .box2, .box4, .box6{
+      background-color:#e0e0e0;
+    }
+    .box1, .box3, .box5,.box7{
+      background-color:#ababab;
+    }
+    .box5,.box6{
+
+      padding:12px 15px;
+      box-sizing: border-box;
+    }
+ 
+    .box7{
+      padding-bottom:30px;
+    }
+    input{
+      margin-left: 1px;
+      margin-top: 5px;
+      max-width:100%;
+    }
+    .mail-box{
+      width:340px;
+      display:block;
+    }
+    .form-button{
+      padding-top:60px;
+      text-align:center;
+    }
+    .form-button-edit{
+      cursor:pointer;
+      background-color:#fdc543;
+      padding:10px 20px;
+      font-size:15px;
+      border-style: none;
+    }
+    .nail{
+      cursor : pointer;
+    }
+    .form-button-edit:hover{
+      opacity:0.7;
+    }
+    .top-button{
+     text-align:right;
+     margin-right:18px;
+     margin-bottom:18px;
+    }
+    .top-button-edit{
+      background-color:#009da0;
+      color:white;
+      cursor: pointer;
+      padding:5px 10px;
+      border-style: none;
+      position: fixed;
+      bottom: 10px;
+      right: 14px;
+      opacity:0.8;
+    }
+    .copyright{
+      background-color:#009da0;
+      color:white;
+      margin-bottom:85px;
+      margin-top:80px;
+    }
+    .copyright p{
+      text-align:center;
+      padding:10px 0px 10px 0px;　
+      font-size:9px;
+    }
+    #just-box{
+      display:block;
+      padding-top: 0px;
+    }
+    .experience-second{
+      margin-top:0px;
+      box-sizing: border-box;
+      margin-left:0px;
+    }
+    #only-box{
+    margin-left:0px;
+    }
+  .mgr-20{
+    margin-right:25px;
+  }
+  .mgr-147{
+    margin-right:0px;
+  }
+  .brbr{
+    display:block;
+  }
+}
+    /*　ボタン小さく　ヘッダーへのボタン返す　タブ作る　資格の整列
+　　*/
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　タブレット　*/
+    body{
+      max-width:10240px;
+    }
+    header{
+      width:100%;
+      margin-left:0;
+    }
+
+    .slide-image, .slider1, .slider2, .slider3{
+      width:100%;
+    }
+
+
+    .first-title {
+      font-size: 14px;
+      margin-bottom: -20px;
+      padding-left: 10px;
+    }
+
+    .second-title {
+      font-size: 22px;
+      padding-left: 10px;
+    }
+
+    .header-catch {
+      height: 15px;
+      padding-left: 10px;
+    }
+
+    .header-catch p {
+      font-size: 10px;
+      color: white;
+    }
+
+    #headmast {
+      display:none;
+    }
+
+
+    .feature-wrapper {
+      height: 615px;
+    }
+
+    .s2 {
+      display: flex;
+      font-size: 36px;
+      align-items: center;
+      margin-left: 400px;
+      margin-right: 400px;
+    }
+
+    .s2:before, .s1:after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      display: block;
+      background: black;
+    }
+
+    .s2:before {
+      margin-right: 10px;
+    }
+
+    .s2:after {
+      margin-left: 10px;
+    }
+
+
+    .feature-box-head {
+      border: solid thin #ff9000;
+      height: 50px;
+      width:100%;
+      margin-left: 0px;
+      padding-top: 10px;
+    }
+    .feature-box-head button{
+        font-size: 16px;
+    }
+
+
+    .first-type {
+      background-color: white;
+      color: black !important;
+    }
+
+    .feature-box {
+      width:100%;
+      margin-left:0px !important;
+    }
+
+  nobr{
+    font-size:22px;
+    text-align: center;
+
+  }
+  .feuture-text{
+    padding-left:10px;
+    font-size:9px;
+  }
+
+    .feauture-image img {
+      width: 320px;
+      height: 190px;
+    }
+
+
+    .concept-title, .feature-title, .senpai-title, .company-title, .contact-title{
+      text-align:center;
+      padding-top:50px;
+      padding-bottom:40px;
+    }
+
+    .s1 {
+      display: flex;
+      font-size: 22px;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    .s1:before {
+      margin-right: 10px;
+    }
+
+    .s1:after {
+      margin-left: 10px;
+    }
+
+    .concept-image {
+      max-width:100%;
+      width:100%;
+    }
+
+    .big-image {
+      padding-left: 10px;
+      margin-top:-1px;
+    }
+
+    .big-image img {
+      height: 222px;
+      width: 310px;
+    }
+
+    .small-image {
+      padding:0px 5px;
+      margin-top:0px;
+    }
+
+    .small-image img {
+      height: 60px;
+      width: 110px;
+      display: block;
+      padding-bottom: 20px;
+    }
+
+    .concept-text {
+      padding-right:0px;
+      margin-top: 0;
+      display:block;
+    }
+
+    .concept-text p {
+      padding-bottom: 20px;
+      padding-left: 0px;
+      font-size: 9px;
+    }
+
+    .letter-image {
+      width:100%;
+      height:200px;
+    }
+
+    .voice-wrapper {
+      display:block;
+      height:630px;
+      width:100%;
+      max-width:100%;
+      padding-left:0px !important;
+    }
+
+      .senpai-image {
+        display:inline;
+    }
+
+    .senpai-image img {
+      height: 190px;
+      width: 270px;
+    }
+
+    .senpai-image2 {
+      margin-left:0px;
+      text-align: left;
+      position: relative;
+      top:50px;
+    }
+
+    .senpai-image2 img {
+      height: 180px;
+      width: 270px;
+    }
+
+    .senpai-info {
+      margin-top: 0;
+      justify-content: flex-start;
+      padding-left: 10px;
+      display:inline;
+      font-size:7px;
+    }
+
+    .senpai-info2 {
+      margin-top: 0;
+      justify-content: flex-start;
+      padding-left: 0px;
+      position: relative;
+      top:50px;
+    }
+
+    .senpai-info p {
+      padding-bottom: 1px;
+      font-size: 9px;
+    }
+
+    .senpai-info2 p {
+      padding-bottom: 1px;
+      font-size: 9px;
+    }
+    .box{
+      display:inline-flex;
+      margin-bottom:50px;
+    }
+    .senpai-voice1,.senpai-voice2 {
+      display: none;
+    }
+    .mobile-voice{
+      display:inline !important;
+      line-height:0%;
+      display:block;
+    }
+    .senpai-voice2{
+      position: relative;
+      top:50px;
+      left:-40px;
+      margin-left:0;
+    }
+    .senpai-voice1 p, .senpai-voice2 p {
+      padding-top: 20px;
+      padding-left:15px;
+      font-size:14px;
+    }
+    .company-title{
+      background-color:#e0e0e0;
+    }
+    .company{
+      height:430px;
+      background-color:#e0e0e0;
+      width:100%;
+      max-width:100%;
+      padding-top:50px;
+    }
+
+    .mappp{
+      margin-right:20px;
+      margin-left:0px;
+
+    }
+    iframe{
+      width:260px;
+      height:320px;
+    }
+    table{
+      border-collapse:collapse;
+      margin-left:0px;
+      padding-right:5px;
+
+     }
+     td{
+       padding:15px;
+       font-size:11px;
+
+     }
+     .form{
+       padding-left:0px;
+       margin-right:0px;
+       width:100%;
+       max-width:100%;
+       font-size:12px;
+     }
+    #name, #mail, #furigana, #phone, #mail{
+    margin-left: 0px;
+    }
+    ul li {
+        list-style: none;
+        padding-bottom:10px;
+        padding-top:10px;
+        width:100%;
+        max-width:100%;
+    }
+    ul{
+      padding-inline-start:0px;
+    }
+    label{
+      margin-right:14px;
+ 
+    }
+    input,textarea{
+  
+      
+    }
+
+    .form p{
+      display:inline-block;
+      background-color:#ff0000;
+      color:white;
+      padding:5px 7px;
+      text-align:right;
+    }
+
+    .experience-second{
+      margin-top:0px;
+      box-sizing: border-box;
+      margin-left:0px;
+    }
+    #just-box{
+      padding-top: 5px;
+      padding-left:248px;
+    }
+
+    .box-box{
+      width:300px;
+      height:20px;
+      margin-left:15px;
+    }
+    .mail-box{
+      width:300px !important;
+      height:20px;
+      margin-left:14px;
+    }
+    textarea{
+      width:340px;
+      height:130px;
+      vertical-align:top;
+      margin-left:0px;
+    }
+    .hissu1,.hissu2,.hissu3,.hissu4,.hissu5,.hissu6,.hissu7{
+    padding:1px 1px;
+    font-size:6px;
+  }
+  .hissu5,.hissu6{
+    margin-left:7px;
+  }
+  .hissu1{
+  margin-left:110px;
+  margin-right:40px;
+  }
+  .hissu2{
+  margin-left:86px;
+  margin-right:40px;
+  }
+  .hissu3{
+  margin-left:86px;
+  margin-right:40px;
+  }
+  .hissu4{
+  margin-left:52px;
+  margin-right:40px;
+  }
+  .hissu5{
+  margin-left:90px;
+  margin-right:40px;
+  }
+  .hissu6{
+  margin-left:90px;
+  margin-right:40px;
+  }
+  .hissu7{
+    margin-right:55px;
+    margin-left:66px;
+  }
+
+    .box2, .box4, .box6{
+      background-color:#e0e0e0;
+    }
+    .box1, .box3, .box5,.box7{
+      background-color:#ababab;
+    }
+    .box5,.box6{
+      box-sizing: border-box;
+      padding-left:15px;
+
+    }
+    .box7{
+      padding-top:30px;
+      padding-bottom:30px;
+    }
+    input{
+      margin-left: 1px;
+      margin-top: 5px;
+      max-width:100%;
+    }
+    .mail-box{
+      width:340px;
+
+    }
+    .form-button{
+      padding-top:60px;
+      text-align:center;
+    }
+    .form-button-edit{
+      cursor:pointer;
+      background-color:#fdc543;
+      padding:10px 20px;
+      font-size:15px;
+      border-style: none;
+    }
+    .nail{
+      cursor : pointer;
+    }
+    .form-button-edit:hover{
+      opacity:0.7;
+    }
+    .top-button{
+     text-align:right;
+     margin-right:18px;
+     margin-bottom:18px;
+    }
+    .top-button-edit{
+      background-color:#009da0;
+      color:white;
+      cursor: pointer;
+      padding:5px 10px;
+      border-style: none;
+      position: fixed;
+      bottom: 10px;
+      right: 14px;
+      opacity:0.8;
+    }
+    .copyright{
+      background-color:#009da0;
+      color:white;
+      margin-bottom:85px;
+      margin-top:80px;
+    }
+    .copyright p{
+      text-align:center;
+      padding:10px 0px 10px 0px;　
+      font-size:9px;
+    }
+  .mgr-147{
+    margin-right:-134px;
+  }
+  .mgr-100{
+    margin-right:64px;
+  }
+  .mgr-67{
+    margin-right:40px;
+  }
+  .mgr-20{
+    margin-right:7px;
+  }
+}
