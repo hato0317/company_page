@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="stylesheet.css" media="screen">
   <link rel="stylesheet" href="stylesheet.css" media="screen and (max-width: 480px)">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-  <title>Company</title>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <title>Company</title>
 </head>
 <body>
   <script>
@@ -53,31 +53,6 @@
       });
     });
 
-    $(function() {
-    $('.slider1')
-        .css({opacity: 0})
-        .each(function(i){
-            $(this).delay(500 * i).animate({opacity:1}, 1500);
-        });
-});
-$(function(){
-  $(".slider1").click(function(){
-    $(".slider1").fadeOut(500);
-    $(".slider2").fadeIn(3000);
-  });
-});
-$(function(){
-  $(".slider2").click(function(){
-    $(".slider2").fadeOut(500);
-    $(".slider3").fadeIn(3000);
-  });
-});
-$(function(){
-  $(".slider3").click(function(){
-    $(".slider3").fadeOut(0);
-    $(".slider1").fadeIn(3000);
-  });
-});
 
 $(function(){
   $('a[href^="#"]').click(function(){
@@ -99,22 +74,23 @@ if(scTop > 500){
   }
 });
 });
+    $(function(){
+  $('.header-image').slick({
+    autoplay:true,
+    arrows:false,
+  });
+});
   </script>
   <header id="6">
     <div class="header-image">
-      <img class="slide-image slider1" src="https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_960_720.jpg">
-      <img class="slide slider2" src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_960_720.jpg">
-      <img class="slide slider3" src="https://cdn.pixabay.com/photo/2016/01/14/20/14/desk-1140699_960_720.jpg">
-      <div class="header-title">
-        <p class="first-title">Company</p>
-        <!--
-  --> <p class="second-title"></p>
+      <div><img src="https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_960_720.jpg">
       </div>
-      <!--header-title-->
-    </div>
+      <div><img src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_960_720.jpg"></div>
+      <div><img  src="https://cdn.pixabay.com/photo/2016/01/14/20/14/desk-1140699_960_720.jpg"></div>
+      </div>
+
     <!--header-image-->
     <div class="header-catch">
-      <p></p>
     </div>
     <!--header-catch-->
 
